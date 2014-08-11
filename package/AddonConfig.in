@@ -1,0 +1,7 @@
+menu "Addon packages"
+
+source "package/dfreerdp/Config.in"
+source "package/advancemame/Config.in"
+source "package/omxplayer/Config.in"
+
+endmenu
