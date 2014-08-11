@@ -27,7 +27,7 @@ ADVANCEMAME_TARGETS_y += bin/advmame
 define ADVANCEMAME_INSTALL_TARGET_CMDS
     $(Q)mkdir -p $(TARGET_DIR)/usr/bin
     $(Q)for file in $(ADVANCEMAME_TARGETS_y); do 	\
-        $(INSTALL) -m 0644 $(ADVANCEMAME_TEMPOUTPUT)/$$file $(TARGET_DIR)/usr/bin; 	\
+        $(INSTALL) -m 0755 $(ADVANCEMAME_TEMPOUTPUT)/$$file $(TARGET_DIR)/usr/bin; 	\
     done
 endef
 
